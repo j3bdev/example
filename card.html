@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>exercice-4</title>
+      <style> 
+          body{
+              display : grid;
+              grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+              gap: 30px;
+              margin: 20px;
+          }
+          .card {
+              min-height: 480px;
+              box-shadow: 10px -10px 10px rgba(0, 128, 128, 0.4), -10px 0 10px rgba(0, 128, 128, 0.4);
+              border: 1px solid black;
+          }
+          body .card:nth-child(2n) {
+              box-shadow: 10px -10px 10px rgba(124, 0, 128, 0.4), -10px 0 10px rgba(124, 0, 128, 0.4);
+          }
+          p{
+              padding: 25px;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="card"><p>Card 1</p></div>
+      <div class="card"><p>Card 2</p></div>
+      <div class="card"><p>Card 3</p></div>
+      <div class="card"><p>Card 4</p></div>
+      <div class="card"><p>Card 5</p></div>
+  </body>
+</html>
