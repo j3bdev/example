@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body {
-            height: 200vh;
+            height: 200vh; /* force le scrool a 2 fois hauteur de l'ecran */
             display: flex;
             flex-direction: column-reverse;
             background-color: pink;
@@ -16,8 +16,7 @@
 
         nav {
             box-shadow: 0 5px 0 0 black;
-            position: -webkit-sticky;
-            /* pour safari */
+            position: -webkit-sticky; /* pour safari */
             position: sticky;
             bottom: 1rem;
             background-color: grey;
